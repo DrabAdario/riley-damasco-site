@@ -39,7 +39,7 @@ export default function WrestlingTournamentsCaseStudy() {
               Full-stack engineering to scale a massive tournament management platform. Handling live brackets, athlete profiles, and real-time event updates.
             </Typography>
             <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 6 }}>
-              {["Full-Stack", "React", "Next.js", "Server Actions", "Database Design"].map((tag) => (
+              {["Full-Stack", "React", "Next.js", "TypeScript", "UI/UX"].map((tag) => (
                 <Chip
                   key={tag}
                   label={tag}

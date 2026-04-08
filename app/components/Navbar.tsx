@@ -61,7 +61,8 @@ export default function Navbar() {
     if (link.isHash) {
       return isHome && active === link.href;
     }
-    return pathname === `/${link.href}`;
+    const base = `/${link.href}`;
+    return pathname === base || pathname === `${base}/`;
   };
 
   return (

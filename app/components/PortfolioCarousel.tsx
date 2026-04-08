@@ -20,7 +20,8 @@ export type PortfolioCarouselItem = {
 };
 
 type PortfolioCarouselProps = {
-  label: string;
+  /** Row title above the carousel; omit on the homepage when the section already has a heading. */
+  label?: string;
   items: PortfolioCarouselItem[];
 };
 
@@ -36,14 +37,16 @@ export default function PortfolioCarousel({ label, items }: PortfolioCarouselPro
 
   return (
     <section className="w-full">
-      <Typography
-        variant="h5"
-        component="h2"
-        fontWeight={700}
-        sx={{ color: "var(--text-primary)", mb: 2, letterSpacing: "-0.02em" }}
-      >
-        {label}
-      </Typography>
+      {label ? (
+        <Typography
+          variant="h5"
+          component="h2"
+          fontWeight={700}
+          sx={{ color: "var(--text-primary)", mb: 2, letterSpacing: "-0.02em" }}
+        >
+          {label}
+        </Typography>
+      ) : null}
 
       <Box className="relative group/carousel">
         <IconButton

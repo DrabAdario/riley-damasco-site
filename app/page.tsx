@@ -1,40 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import Navbar from "./components/Navbar";
-import ProjectCard from "./components/ProjectCard";
+import PortfolioCarousel from "./components/PortfolioCarousel";
+import { ALL_PROJECTS_CAROUSEL_ITEMS } from "./lib/portfolioProjects";
 import ActivityCard from "./components/ActivityCard";
 import SectionReveal from "./components/SectionReveal";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Button, Chip, Box } from "@mui/material";
-
-const PROJECTS = [
-  {
-    title: "Space Astronaut Platformer",
-    role: "Solo Developer",
-    description:
-      "A 2D platformer game featuring an astronaut exploring space. Built with Unity and C#.",
-    image: "https://i.imgur.com/gzXTS2R.gif",
-    link: "https://mywebspace.quinnipiac.edu/rmdamasco/200/FinalPro/",
-  },
-  {
-    title: "LET US COOK (Rogue-like Game)",
-    role: "Software Engineer",
-    description:
-      "Worked with a team of four software engineers to create a 2D top-down rogue-like game. Owned projectile and item subsystems, including software architecture and UI design. Used Git for version control.",
-    image: "https://i.imgur.com/O2o2EFQ.png",
-    link: "https://a-r-t.github.io/SER225-Project-Website/semesters/fall2023/teams/let-us-cook",
-  },
-  {
-    title: "Enter The Gungeon Modding",
-    role: "Open-source Software Developer",
-    description:
-      "Created two mods for the game Enter The Gungeon, adding new items, characters, and abilities. Learned how to investigate codebases with complex and sparse documentation. Created hand-drawn sprites for the project.",
-    image: "https://i.imgur.com/P2DO3dE.png",
-    link: "https://ellidelli.github.io/SER375ProjectsSite/projects/let_us_mod_etg",
-  },
-];
 
 const ACTIVITIES = [
   {
@@ -205,14 +180,14 @@ export default function Home() {
       <div className="section-divider" />
 
       {/* ═══════════════════════════ PROJECTS ═══════════════════════════ */}
-      <section id="projects" className="relative py-24 px-6">
+      <section id="projects" className="relative py-24 px-4 sm:px-6">
         {/* Background orb */}
         <div
           className="glow-orb w-[600px] h-[600px] bg-accent top-0 right-[-20%]"
           style={{ animation: "pulse-glow 10s ease-in-out infinite" }}
         />
 
-        <div className="max-w-5xl mx-auto relative z-10">
+        <div className="max-w-[1600px] mx-auto relative z-10">
           <SectionReveal>
             <div className="flex flex-col gap-4 text-center items-center">
               <div className="accent-bar" />
@@ -220,18 +195,22 @@ export default function Home() {
                 Projects
               </h2>
               <p className="text-muted max-w-md">
-                A selection of things I&apos;ve built — from games to
-                open-source mods.
+                Everything in one row — games, web builds, and work samples.
               </p>
             </div>
           </SectionReveal>
 
-          <SectionReveal stagger className="mt-14">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {PROJECTS.map((project) => (
-                <ProjectCard key={project.title} {...project} />
-              ))}
-            </div>
+          <SectionReveal className="mt-10">
+            <PortfolioCarousel items={ALL_PROJECTS_CAROUSEL_ITEMS} />
+          </SectionReveal>
+
+          <SectionReveal className="mt-8 flex justify-center">
+            <Link
+              href="/portfolio/"
+              className="text-sm sm:text-base font-medium text-[var(--accent-2)] hover:text-[var(--accent-1)] underline underline-offset-4 decoration-[var(--accent-2)]/50 hover:decoration-[var(--accent-1)] transition-colors"
+            >
+              View full portfolio!
+            </Link>
           </SectionReveal>
         </div>
       </section>

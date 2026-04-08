@@ -1,0 +1,3 @@
+# Presence of this file tells deploy-pages.yml to build with no basePath.
+# Required when the site is served at a custom domain root (e.g. rileydamasco.com)
+# instead of https://<user>.github.io/<repo>/.

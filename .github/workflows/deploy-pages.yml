@@ -26,11 +26,16 @@ jobs:
           cache: npm
           cache-dependency-path: package-lock.json
 
+      # Project repos default to basePath=/repo so https://user.github.io/repo/ works.
+      # Custom domains for project sites are served at the domain root, so asset URLs must
+      # NOT include the repo prefix — set repository variable PAGES_AT_ROOT=true in that case.
       - name: Set base path for GitHub Pages
         run: |
           OWNER="${{ github.repository_owner }}"
           REPO="${{ github.event.repository.name }}"
-          if [ "$REPO" = "$OWNER.github.io" ]; then
+          if [ "${{ vars.PAGES_AT_ROOT }}" = "true" ]; then
+            echo "PAGES_AT_ROOT: build without basePath (custom domain or root hosting)"
+          elif [ "$REPO" = "$OWNER.github.io" ]; then
             echo "User or organization site: site root"
           else
             echo "NEXT_BASE_PATH=/$REPO" >> "$GITHUB_ENV"

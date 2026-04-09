@@ -17,6 +17,14 @@ export const GITHUB_PAGES_ROW: PortfolioCarouselItem[] = [
     href: "https://drabadario.github.io/magic-garden/",
     external: true,
   },
+  {
+    title: "Writing Tools",
+    subtitle: "Work in progress writing tools. More to come!",
+    posterGradient:
+      "linear-gradient(135deg,rgb(24, 20, 83) 0%,rgb(26, 22, 101) 40%,rgb(84, 74, 222) 95%)",
+    href: "https://drabadario.github.io/writing-tools/",
+    external: true,
+  },
 ];
 
 export const GAME_DEVELOPMENT_ROW: PortfolioCarouselItem[] = [

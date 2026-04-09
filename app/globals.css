@@ -98,25 +98,6 @@ body::before {
   animation: shimmer 6s ease-in-out infinite;
 }
 
-/* ── Section reveal animation ── */
-.reveal {
-  opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* stagger children */
-.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0ms; }
-.reveal-stagger > .reveal:nth-child(2) { transition-delay: 120ms; }
-.reveal-stagger > .reveal:nth-child(3) { transition-delay: 240ms; }
-.reveal-stagger > .reveal:nth-child(4) { transition-delay: 360ms; }
-
 /* ── Glow orb backgrounds ── */
 .glow-orb {
   position: absolute;

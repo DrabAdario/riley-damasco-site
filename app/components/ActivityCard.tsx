@@ -15,7 +15,7 @@ export default function ActivityCard({
 }: ActivityCardProps) {
   return (
     <Card
-      className="glass-card reveal overflow-hidden group"
+      className="glass-card overflow-hidden group"
       sx={{
         background: "transparent",
         boxShadow: "none",

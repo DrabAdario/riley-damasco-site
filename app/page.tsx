@@ -270,7 +270,7 @@ export default function Home() {
               {/* Email */}
               <a
                 href="mailto:riley.damasco.04@gmail.com"
-                className="reveal glass-card flex items-center gap-3 px-6 py-4 hover:!border-accent/30 transition-all group"
+                className="glass-card flex items-center gap-3 px-6 py-4 hover:!border-accent/30 transition-all group"
               >
                 <EmailOutlinedIcon
                   className="w-5 h-5 text-accent transition-transform group-hover:scale-110"
@@ -293,7 +293,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/rileydamasco/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="reveal glass-card flex items-center gap-3 px-6 py-4 hover:!border-blue-500/30 transition-all group"
+                className="glass-card flex items-center gap-3 px-6 py-4 hover:!border-blue-500/30 transition-all group"
               >
                 <LinkedInIcon
                   className="w-5 h-5 text-blue-400 transition-transform group-hover:scale-110"

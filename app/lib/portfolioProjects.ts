@@ -18,11 +18,27 @@ export const GITHUB_PAGES_ROW: PortfolioCarouselItem[] = [
     external: true,
   },
   {
-    title: "Writing Tools",
-    subtitle: "Work in progress writing tools. More to come!",
+    title: "Magic Monster Generation",
+    subtitle: "Generate your own magic monster!",
     posterGradient:
       "linear-gradient(135deg,rgb(24, 20, 83) 0%,rgb(26, 22, 101) 40%,rgb(84, 74, 222) 95%)",
-    href: "https://drabadario.github.io/writing-tools/",
+    href: "https://drabadario.github.io/writing-tools/bestiary",
+    external: true,
+  },
+  {
+    title: "Quick Character Generator, with backstorys and peorsonality traits.",
+    subtitle: "Work in progress writing tools. More to come!",
+    posterGradient:
+      "linear-gradient(135deg,rgb(69, 20, 83) 0%,rgb(101, 22, 98) 40%,rgb(222, 74, 220) 95%)",
+    href: "https://drabadario.github.io/writing-tools/character-workshop",
+    external: true,
+  },
+  {
+    title: "Read aloud tool, simple TTS app.",
+    subtitle: "Work in progress writing tools. More to come!",
+    posterGradient:
+      "linear-gradient(135deg,rgb(20, 57, 83) 0%,rgb(22, 94, 101) 40%,rgb(74, 222, 188) 95%)",
+    href: "https://drabadario.github.io/writing-tools/read-aloud",
     external: true,
   },
 ];

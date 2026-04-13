@@ -8,6 +8,9 @@ export const metadata = {
   description: "Full-stack case study for WrestlingTournaments.com",
 };
 
+/** Set to `false` when the case study is ready to publish. Full content stays in this file below. */
+const WRESTLING_TOURNAMENTS_WIP = true;
+
 export default function WrestlingTournamentsCaseStudy() {
   return (
     <>
@@ -30,6 +33,39 @@ export default function WrestlingTournamentsCaseStudy() {
             </Link>
           </div>
 
+          {WRESTLING_TOURNAMENTS_WIP ? (
+            <Box
+              className="glass-card"
+              sx={{
+                py: { xs: 6, md: 10 },
+                px: { xs: 3, md: 6 },
+                textAlign: "center",
+                borderRadius: "16px",
+              }}
+            >
+              <Chip
+                label="WIP"
+                sx={{
+                  mb: 3,
+                  fontWeight: 700,
+                  letterSpacing: "0.08em",
+                  background: "rgba(139, 92, 246, 0.2)",
+                  color: "#c4b5fd",
+                  border: "1px solid rgba(139, 92, 246, 0.45)",
+                }}
+              />
+              <Typography variant="h3" fontWeight={800} className="gradient-text mb-3">
+                WrestlingTournaments.com
+              </Typography>
+              <Typography variant="h6" color="var(--text-secondary)" sx={{ fontWeight: 500, mb: 2 }}>
+                Work in progress
+              </Typography>
+              <Typography variant="body1" color="var(--text-secondary)" sx={{ maxWidth: 480, mx: "auto", lineHeight: 1.75 }}>
+                This case study page is still being written. Check back soon for the full write-up, or explore other projects from the portfolio.
+              </Typography>
+            </Box>
+          ) : (
+            <>
           {/* Header */}
           <div>
             <Typography variant="h2" fontWeight={800} className="gradient-text mb-4 tracking-tight">
@@ -159,6 +195,8 @@ export default function WrestlingTournamentsCaseStudy() {
             </div>
 
           </div>
+            </>
+          )}
         </div>
       </main>
     </>

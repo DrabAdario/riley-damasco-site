@@ -4,40 +4,40 @@ export const GITHUB_PAGES_ROW: PortfolioCarouselItem[] = [
   {
     title: "Dog Fight!",
     subtitle: "Turn-based dog web game",
-    posterGradient:
-      "linear-gradient(135deg, #431407 0%, #9a3412 42%, #f97316 100%)",
+    image:
+      "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&auto=format&fit=crop&q=80",
     href: "https://drabadario.github.io/dog-fight/",
     external: true,
   },
   {
     title: "Magic Garden",
     subtitle: "Browser game on GitHub Pages",
-    posterGradient:
-      "linear-gradient(135deg, #14532d 0%, #166534 40%, #4ade80 95%)",
+    image:
+      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&auto=format&fit=crop&q=80",
     href: "https://drabadario.github.io/magic-garden/",
     external: true,
   },
   {
     title: "Magic Monster Generation",
     subtitle: "Generate your own magic monster!",
-    posterGradient:
-      "linear-gradient(135deg,rgb(24, 20, 83) 0%,rgb(26, 22, 101) 40%,rgb(84, 74, 222) 95%)",
+    image:
+      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&auto=format&fit=crop&q=80",
     href: "https://drabadario.github.io/writing-tools/bestiary",
     external: true,
   },
   {
-    title: "Quick Character Generator, with backstorys and peorsonality traits.",
-    subtitle: "Work in progress writing tools. More to come!",
-    posterGradient:
-      "linear-gradient(135deg,rgb(69, 20, 83) 0%,rgb(101, 22, 98) 40%,rgb(222, 74, 220) 95%)",
+    title: "Quick Character Generator",
+    subtitle: "Generate backstories and personality traits.",
+    image:
+      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&auto=format&fit=crop&q=80",
     href: "https://drabadario.github.io/writing-tools/character-workshop",
     external: true,
   },
   {
-    title: "Read aloud tool, simple TTS app.",
-    subtitle: "Work in progress writing tools. More to come!",
-    posterGradient:
-      "linear-gradient(135deg,rgb(20, 57, 83) 0%,rgb(22, 94, 101) 40%,rgb(74, 222, 188) 95%)",
+    title: "Read aloud tool.",
+    subtitle: "simple text to speech app!",
+    image:
+      "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&auto=format&fit=crop&q=80",
     href: "https://drabadario.github.io/writing-tools/read-aloud",
     external: true,
   },
